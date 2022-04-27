@@ -21,7 +21,7 @@ node -r ts-node/register/transpile-only src/cli/decode_vpr.ts "input.vpr" "outpu
 const {
   decryptKgmByteAtOffsetV2,
   decryptVprByteAtOffset,
-} = require("@jixun/kugou-crypto/utils/decryptionHelper");
+} = require("@jixun/kugou-crypto/dist/utils/decryptionHelper");
 
 const offset = 0x1234;
 const fileKey = Buffer.alloc(17); // 17 字节的文件专属 key
