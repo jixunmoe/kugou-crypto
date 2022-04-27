@@ -1,0 +1,55 @@
+{
+  "name": "@jixun/kugou-crypto",
+  "version": "1.0.0",
+  "description": "Kugou Music Crypto Lib",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "tsc",
+    "test": "ava"
+  },
+  "keywords": [
+    "kugou-music",
+    "crypto"
+  ],
+  "author": "Jixun Wu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.29",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "ava": "^4.2.0",
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "commander": "^9.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "env": {
+      "node": true
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ]
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register/transpile-only"
+    ]
+  }
+}
