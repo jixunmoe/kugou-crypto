@@ -11,6 +11,10 @@
     "kugou-music",
     "crypto"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jixunmoe/kugou-crypto.git"
+  },
   "author": "Jixun Wu",
   "license": "MIT",
   "devDependencies": {
