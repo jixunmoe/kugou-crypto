@@ -4,7 +4,7 @@ export const TABLE_SIZE = 16 * 17;
 
 export function getMaskByteAtOffset(offset: number) {
   let value = 0;
-  while (offset > 0) {
+  while (offset >= 0x11) {
     value ^= t1[offset % TABLE_SIZE];
     offset >>>= 4;
     value ^= t2[offset % TABLE_SIZE];
