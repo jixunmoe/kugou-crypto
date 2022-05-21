@@ -2,7 +2,7 @@
 
 根据 unlock-music/cli 项目的 `kgm mask` 进行研究所制作的库。
 
-目前可以 1:1 生成相对应的 mask 文件并进行解密。
+目前可以 1:1 生成相对应的 mask 文件方便运算。
 
 ## 测试
 
@@ -16,8 +16,10 @@ node 接口。
 ### CLI
 
 ```sh
-node -r ts-node/register/transpile-only src/cli/decode_kgm.ts "input.kgm" "output.flac"
-node -r ts-node/register/transpile-only src/cli/decode_vpr.ts "input.vpr" "output.flac"
+npm run build # 编译 TypeScript 文件
+
+node dist/cli/decode_kgm "input.kgm" "output.flac"
+node dist/cli/decode_vpr "input.vpr" "output.flac"
 ```
 
 ### 浏览器

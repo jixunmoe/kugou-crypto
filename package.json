@@ -4,7 +4,8 @@
   "description": "Kugou Music Crypto Lib",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "tsc",
+    "build": "tsc",
+    "prepare": "npm run build",
     "test": "ava"
   },
   "keywords": [
