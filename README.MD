@@ -49,7 +49,7 @@ decryptVprByteAtOffset(encryptedBytes[offset], fileKey, offset);
 
 ```sh
 mkdir -p fixture
-curl https://github.com/unlock-music/cli/raw/v0.1.1/algo/kgm/kgm.v2.mask \
+curl -L https://github.com/unlock-music/cli/raw/v0.1.1/algo/kgm/kgm.v2.mask \
   | xz -d > fixture/kgm.v2.mask
 ```
 
